@@ -33,6 +33,11 @@ This project involves building and deploying four separate XGBoost machine learn
 
 ![image](https://github.com/user-attachments/assets/f47e82e3-00ce-4ae0-ba81-fc3521778c92)
 
+### Local API 
+
+![image](https://github.com/user-attachments/assets/f342a16e-c15d-4fc3-91ad-310d9f5780d2)
+
+
 
     
 ## ⚙️ Technologies Used
