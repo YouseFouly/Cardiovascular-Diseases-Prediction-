@@ -14,11 +14,25 @@ This project involves building and deploying four separate XGBoost machine learn
 
 ✅ API Development: A FastAPI app was created with 4 endpoints, one for each prediction model.4
 
+
+## 📖 Web APP Pages 
+
+### Diabetes Prediction Page
+
 ![image](https://github.com/user-attachments/assets/b767ec67-e3e4-4a08-8b50-ea0ab9415469)
 
-![image](https://github.com/user-attachments/assets/31e18c85-0330-41d1-9f9a-10fecc9e0ee9)
+### Heart Failier Prediction Page 
 
-![image](https://github.com/user-attachments/assets/7aad510f-9593-409c-8ec9-95b1e6aedac3)
+![image](https://github.com/user-attachments/assets/e99a05ae-f0da-4172-8c8b-6911b9d1057b)
+
+### Obesity Prediction Page 
+
+![image](https://github.com/user-attachments/assets/72c34d8e-bb0e-45f4-ac5a-5c1f0ab42dae)
+
+### Stroke Prediction Page 
+
+![image](https://github.com/user-attachments/assets/f47e82e3-00ce-4ae0-ba81-fc3521778c92)
+
 
     
 ## ⚙️ Technologies Used
