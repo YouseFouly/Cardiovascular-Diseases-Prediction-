@@ -5,13 +5,23 @@ This project involves building and deploying four separate XGBoost machine learn
 ## 📁 Project Structure
 
 ├── models/
+
 │   ├── model_1.pkl
+
 │   ├── model_2.pkl
+
 │   ├── model_3.pkl
+
 │   └── model_4.pkl
+
 ├── main.py
+
 ├── requirements.txt
+
 ├── README.md
+
 └── utils/
+
     └── preprocessing.py
+    
 
