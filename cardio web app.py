@@ -1,31 +1,31 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Sep 5 13:52:40 2024
-
-@author: ELBOSTAN
-"""
-
 import os
 import pickle 
 import streamlit as st 
 from streamlit_option_menu import option_menu 
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-diabetes_model = pickle.load(
-    open(os.path.join(BASE_DIR, 'diabetes_model.sav'), 'rb')
-)
+# Method 1: directory of this script
+try:
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+except NameError:
+    BASE_DIR = os.getcwd()
 
-heart_failure_model = pickle.load(
-    open(os.path.join(BASE_DIR, 'heart failure model.sav'), 'rb')
-)
+# Method 2 (Streamlit Cloud safe): if models aren't found, use current working dir
+if not os.path.exists(os.path.join(BASE_DIR, 'diabetes_model.sav')):
+    BASE_DIR = os.getcwd()
 
-obesity_model = pickle.load(
-    open(os.path.join(BASE_DIR, 'obesity_model.sav'), 'rb')
-)
+# Load models safely
+with open(os.path.join(BASE_DIR, 'diabetes_model.sav'), 'rb') as f:
+    diabetes_model = pickle.load(f)
 
-storkes_model = pickle.load(
-    open(os.path.join(BASE_DIR, 'strokes_model.sav'), 'rb')
-)
+with open(os.path.join(BASE_DIR, 'heart failure model.sav'), 'rb') as f:
+    heart_failure_model = pickle.load(f)
+
+with open(os.path.join(BASE_DIR, 'obesity_model.sav'), 'rb') as f:
+    obesity_model = pickle.load(f)
+
+with open(os.path.join(BASE_DIR, 'strokes_model.sav'), 'rb') as f:
+    strokes_model = pickle.load(f)
     
     
 with st.sidebar:
