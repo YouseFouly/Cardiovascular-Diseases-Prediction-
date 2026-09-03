@@ -5,6 +5,7 @@ Created on Thu Sep 5 13:52:40 2024
 @author: ELBOSTAN
 """
 
+import os
 import pickle 
 import streamlit as st 
 from streamlit_option_menu import option_menu 
